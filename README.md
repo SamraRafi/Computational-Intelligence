@@ -1,4 +1,4 @@
-# Differential Evolution Computational-Intelligence
+## Differential Evolution 
 The project experiments with the use of Differential Evolution in the class of EAs to optimize the Policy of an Q learning Tic Tac Toe Agent, by evolving a set of Q-tables in order to converge to a population that can beat a learnt agent.
 
 Reinforcement Learning:
@@ -6,7 +6,7 @@ An agent Opp is trained initially via Reinforcement Learning over 100,000 games 
 The agent maintains a Q-table which it updates after the termination of each game via back propagation using the Bellman Equation to update its Q-Values as given below:
 Qt+1(st, at)  Qt(st, at) + ( r+  maxaQ(st+1, a) - Qt(st, at) ) 
 
-## Schema
+### Schema
 Initialization:
 N agents are trained against Opp for 100 episodes during which each agent learns its Q table using Reinforcement Learning. 
 These tables are initialized as the first generation.
@@ -32,7 +32,7 @@ The algorithm uses a Tournament Survival selection mechanism. The tournament poo
 Two individuals are randomly chosen from the combined population, and the one with the higher fitness is selected.
 This process is repeated until a new population of size N is formed. This new population becomes the current population for the next generation.
 
-## Experimentation Results
+### Experimentation Results
 
 Using Tournament Selection, the Best population and Average population stabilized over 20 Generations. However, the population did not converge to the most fit individual
 
@@ -41,7 +41,7 @@ Using Tournament Selection, the Best population and Average population stabilize
 The second run resulted in an overall decreasing trend in the fitness scores, indicating that the selection schema has a possibility for losing the local optima found by exploiting sub-optimal solutions.
 ![image](https://github.com/user-attachments/assets/cd5c1b8c-298e-448c-b876-3df6e4e939a0)
 
-## Conclusion and Future Works
+### Conclusion and Future Works
 
 The algorithm has a lot of potential for refinement in terms of the population’s stability,  convergence, overall performance as well as time complexity.
 
