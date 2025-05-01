@@ -34,7 +34,8 @@ This process is repeated until a new population of size N is formed. This new po
 
 ## Experimentation Results
 
-Using Tournament Selection, the Best population and Average population stabilized over 20 Generations. However, the population did not converge to the most fit individual. 
+Using Tournament Selection, the Best population and Average population stabilized over 20 Generations. However, the population did not converge to the most fit individual
+
 ![image](https://github.com/user-attachments/assets/65b078bc-f266-436e-9ac9-da76a7b78340)
 
 The second run resulted in an overall decreasing trend in the fitness scores, indicating that the selection schema has a possibility for losing the local optima found by exploiting sub-optimal solutions.
